@@ -4,6 +4,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 
     img {
         align-self: center;
@@ -21,5 +22,13 @@
         width: 1.2em;
         margin-top: 1em;
         margin-bottom: 5em;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .landing {
+        #landing-logo {
+            width: 15em;
+        }
     }
 }
