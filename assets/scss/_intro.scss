@@ -1,0 +1,32 @@
+.intro {
+    text-align: center;
+    background-image: url(../assets/images/background.jpg);
+    display: flex;
+    flex-direction: column;
+
+    img {
+        align-self: center;
+    }
+
+    #intro-txt {
+        width: 45em;
+    }
+
+    .intro-btns {
+        display: flex;
+        justify-content: center;
+        margin: 1em 0;
+    
+        img {
+            margin: 0 1em;
+        }
+    
+        #listen-btn, #hire-btn {
+            width: 6em;
+        }
+    
+        #contact-btn {
+            width: 6.5em;
+        }
+    }
+}

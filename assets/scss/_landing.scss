@@ -1,0 +1,25 @@
+.landing {
+    background-image: url(../assets/images/background.jpg);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    img {
+        align-self: center;
+    }
+
+    #landing-logo {
+        width: 20em;
+    }
+
+    #music-producer {
+        width: 12em;
+    }
+
+    #arrow-down {
+        width: 1.2em;
+        margin-top: 1em;
+        margin-bottom: 5em;
+    }
+}
