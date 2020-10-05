@@ -11,7 +11,7 @@
    }
 
    #prodmixmaster-title {
-    width: 45em;
+      width: 45em;
 
       transform: rotate(-2deg);
    }
@@ -22,13 +22,13 @@
 
    .prodmixmaster-content {
       display: flex;
-      justify-content: center;  
+      justify-content: center;
       flex-wrap: wrap;
 
       .detail-card {
          display: flex;
          flex-direction: column;
-         margin: 0 3em;
+         margin: 0 2em;
 
          // card titles
          #prod-title {
@@ -44,8 +44,8 @@
          iframe {
             border: 5px solid #fff;
             border-radius: 7px;
-            width: 20em;
-            height: 20vh;
+            width: 25em;
+            height: 15em;
             margin-bottom: 1em;
          }
 
@@ -55,7 +55,7 @@
          }
 
          #mix-detail-txt-lg {
-            height: 6em;
+            height: 7em;
          }
 
          #master-detail-txt {
@@ -93,9 +93,18 @@
 }
 
 @media screen and (max-width: 450px) {
-    .prodmixmaster {
-        #prodmixmaster-sml {
-            width: 25em;
+ .prodmixmaster {
+
+    #prodmixmaster-sml {
+        width: 25em;
+        
+    }
+    .prodmixmaster-content {
+        .detail-card {
+            iframe {
+                margin: 0 auto 2em auto;
+            }
         }
     }
+ }
 }
