@@ -1,5 +1,5 @@
 .prodmixmaster {
-   padding-top: 10em;
+   padding-top: 15em;
    background-image: url("/assets/images/background.jpg");
    text-align: center;
    display: flex;
@@ -10,8 +10,8 @@
    }
 
    #prodmixmaster-title {
-      width: 45em;
-
+      width: 60em;
+      margin-bottom: 2em;
       transform: rotate(-2deg);
    }
 
@@ -92,18 +92,16 @@
 }
 
 @media screen and (max-width: 450px) {
- .prodmixmaster {
-
-    #prodmixmaster-sml {
-        width: 25em;
-        
-    }
-    .prodmixmaster-content {
-        .detail-card {
+   .prodmixmaster {
+      #prodmixmaster-sml {
+         width: 25em;
+      }
+      .prodmixmaster-content {
+         .detail-card {
             iframe {
-                margin: 0 auto 2em auto;
+               margin: 0 auto 2em auto;
             }
-        }
-    }
- }
+         }
+      }
+   }
 }
