@@ -11,7 +11,8 @@
    }
 
    #prodmixmaster-title {
-      width: 65em;
+    width: 45em;
+
       transform: rotate(-2deg);
    }
 
@@ -27,10 +28,13 @@
       .detail-card {
          display: flex;
          flex-direction: column;
+         margin: 0 3em;
 
          // card titles
          #prod-title {
             align-self: center;
+            height: 5em;
+            margin-bottom: 1em;
          }
 
          img {
@@ -40,25 +44,22 @@
          iframe {
             border: 5px solid #fff;
             border-radius: 7px;
-            width: 30em;
-            margin: 0 3em;
-         }
-
-         .pmm-detail-txt {
-            margin-top: 3em;
+            width: 20em;
+            height: 20vh;
+            margin-bottom: 1em;
          }
 
          // Size is diff here so need to adjust this by itself
          #production-detail-txt-lg {
-            height: 13em;
+            height: 12em;
          }
 
          #mix-detail-txt-lg {
-            height: 7em;
+            height: 6em;
          }
 
          #master-detail-txt {
-            height: 10em;
+            height: 11em;
          }
       }
    }
@@ -67,7 +68,6 @@
 @media screen and (max-width: 1350px) {
    .prodmixmaster {
       #prodmixmaster-title {
-         width: 45em;
          transform: rotate(-2deg);
       }
 
@@ -93,35 +93,9 @@
 }
 
 @media screen and (max-width: 450px) {
-   .prodmixmaster {
-      #prodmixmaster-sml {
-         display: block;
-         width: 20em;
-      }
-      .prodmixmaster-content {
-         .detail-card {
-            // titles
-            #prod-title {
-               height: 4em;
-            }
-
-
-            iframe {
-               width: 80%;
-            }
-
-            #production-detail-txt-lg {
-               height: 10em;
-            }
-
-            #mix-detail-txt-lg {
-               height: 5.5em;
-            }
-
-            #master-detail-txt {
-               height: 8.5em;
-            }
-         }
-      }
-   }
+    .prodmixmaster {
+        #prodmixmaster-sml {
+            width: 25em;
+        }
+    }
 }
