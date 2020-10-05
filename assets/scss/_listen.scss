@@ -36,6 +36,35 @@
             border-radius: 7px;
         }
     }
+
+    .subscription {
+        margin-top: 2em;
+        margin-left: 1em;
+
+        input {
+            border: none;
+            border-radius: 20px 0 0 20px;
+            height: 2.8em;
+            width: 20em;
+            padding-left: 2em;
+        }
+
+        button {
+            border: none;
+            border-radius: 0 20px 20px 0;
+            transform: translateX(-1em);
+            height: 2.8em;
+            width: 6em;
+            background-color: rgb(49, 49, 49);
+            color: #fff;
+            border: 1px solid #fff;
+
+            &:hover {
+                background: #000;
+                cursor: pointer;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 450px) {
