@@ -1,7 +1,6 @@
 .prodmixmaster {
-   padding-top: 10em;
+   padding-top: 15em;
    background-image: url("/assets/images/background.jpg");
-   height: 400vh;
    text-align: center;
    display: flex;
    flex-direction: column;
@@ -11,7 +10,8 @@
    }
 
    #prodmixmaster-title {
-      width: 65em;
+      width: 60em;
+      margin-bottom: 2em;
       transform: rotate(-2deg);
    }
 
@@ -21,16 +21,19 @@
 
    .prodmixmaster-content {
       display: flex;
-      justify-content: center;  
+      justify-content: center;
       flex-wrap: wrap;
 
       .detail-card {
          display: flex;
          flex-direction: column;
+         margin: 0 2em;
 
          // card titles
          #prod-title {
             align-self: center;
+            height: 5em;
+            margin-bottom: 1em;
          }
 
          img {
@@ -38,19 +41,16 @@
          }
 
          iframe {
-            border: 5px solid #fff;
+            border: 4px solid #fff;
             border-radius: 7px;
-            width: 30em;
-            margin: 0 3em;
-         }
-
-         .pmm-detail-txt {
-            margin-top: 3em;
+            width: 25em;
+            height: 15em;
+            margin-bottom: 1em;
          }
 
          // Size is diff here so need to adjust this by itself
          #production-detail-txt-lg {
-            height: 13em;
+            height: 12em;
          }
 
          #mix-detail-txt-lg {
@@ -58,7 +58,7 @@
          }
 
          #master-detail-txt {
-            height: 10em;
+            height: 11em;
          }
       }
    }
@@ -67,7 +67,6 @@
 @media screen and (max-width: 1350px) {
    .prodmixmaster {
       #prodmixmaster-title {
-         width: 45em;
          transform: rotate(-2deg);
       }
 
@@ -95,31 +94,12 @@
 @media screen and (max-width: 450px) {
    .prodmixmaster {
       #prodmixmaster-sml {
-         display: block;
-         width: 20em;
+         width: 25em;
       }
       .prodmixmaster-content {
          .detail-card {
-            // titles
-            #prod-title {
-               height: 4em;
-            }
-
-
             iframe {
-               width: 80%;
-            }
-
-            #production-detail-txt-lg {
-               height: 10em;
-            }
-
-            #mix-detail-txt-lg {
-               height: 5.5em;
-            }
-
-            #master-detail-txt {
-               height: 8.5em;
+               margin: 0 auto 2em auto;
             }
          }
       }

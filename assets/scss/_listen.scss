@@ -1,0 +1,77 @@
+.listen {
+    background-image: url("/assets/images/background.jpg");
+    text-align: center;
+    padding-top: 10em;
+
+    .listen-header {
+        display: flex;
+        flex-direction: column;
+
+        img {
+            align-self: center;
+        }
+
+        #listen-title {
+            width: 15em;
+        }
+
+        #music-every-month {
+            width: 25em;
+            margin-top: 2em;
+        }
+    }
+
+    .listen-options {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 2em;
+        
+        .listen-player {
+            width: 25em;
+            height: 10em;
+            border: 2px solid rgba(255, 255, 255, 0.288);
+            margin: 1em 2em;
+            border-radius: 7px;
+        }
+    }
+
+    .subscription {
+        margin-top: 2em;
+        margin-left: 1em;
+
+        input {
+            border: none;
+            border-radius: 20px 0 0 20px;
+            height: 2.8em;
+            width: 20em;
+            padding-left: 2em;
+        }
+
+        button {
+            border: none;
+            border-radius: 0 20px 20px 0;
+            transform: translateX(-1em);
+            height: 2.8em;
+            width: 6em;
+            background-color: rgb(49, 49, 49);
+            color: #fff;
+            border: 1px solid #fff;
+
+            &:hover {
+                background: #000;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .listen {
+        .listen-header {
+            #listen-title {
+                width: 10em;
+            }
+        }
+    }
+}
