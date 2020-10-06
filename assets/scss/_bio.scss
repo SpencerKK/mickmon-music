@@ -10,6 +10,7 @@
 
         img {
             align-self: center;
+            border-radius: 10px;
         }
 
         #profpic {
@@ -33,6 +34,8 @@
             align-self: center;
             width: 25em;
             margin: 1em;
+            border-radius: 10px;
+
         }
     }
 }
@@ -47,6 +50,12 @@
 
             #bullets {
                 width: 75vw;
+            }
+        }
+
+        .bio-slide {
+            img {
+                width: 80vw;
             }
         }
     }

@@ -9,12 +9,24 @@
         flex-wrap: wrap;
 
         img {
-            width: 5em;
-            margin: 2em;
+            width: 4em;
+            margin: 0 1em;
+            align-self: center;
         }
     }
 
     #mlogo {
-        margin: 4em;
+        margin: 1em;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .footer {
+        .socials {
+            img {
+                width: 10vw;
+                margin: 1vw;
+            }
+        }
     }
 }

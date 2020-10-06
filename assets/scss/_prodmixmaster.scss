@@ -94,13 +94,26 @@
 @media screen and (max-width: 450px) {
    .prodmixmaster {
       #prodmixmaster-sml {
-         width: 25em;
+         width: 22em;
       }
       .prodmixmaster-content {
          .detail-card {
             iframe {
                margin: 0 auto 2em auto;
+               width: 80vw;
             }
+
+            #production-detail-txt-lg {
+                height: 12em;
+             }
+    
+             #mix-detail-txt-lg {
+                height: 6em;
+             }
+    
+             #master-detail-txt {
+                height: 11em;
+             }
          }
       }
    }

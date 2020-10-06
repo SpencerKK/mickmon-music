@@ -45,6 +45,13 @@
             height: 2.8em;
             width: 20em;
             padding-left: 2em;
+            &:hover {
+                outline: none;
+            }
+
+            &:focus {
+                outline: none;
+            }
         }
 
         button {
@@ -60,6 +67,11 @@
             &:hover {
                 background: #000;
                 cursor: pointer;
+                outline: none;
+            }
+
+            &:focus {
+                outline: none;
             }
         }
     }
@@ -69,8 +81,19 @@
     .listen {
         .listen-header {
             #listen-title {
-                width: 10em;
+                width: 50vw;
+            }
+
+            #music-every-month {
+                width: 80vw;
             }
         }
+
+        .subscription {
+            input {
+                width: 60vw;
+            }
+        }
+
     }
 }

@@ -43,9 +43,28 @@
             }
         }
 
+        textarea {
+            width: 30em;
+            height: 5.5em;
+            border-radius: 20px;
+            font-family: sans-serif;
+            margin-top: 1em;
+            padding-top: 1em;
+            padding-left: 1.5em;
+            color: #757575;
+
+            &:hover {
+                outline: none;
+            }
+
+            &:focus {
+                outline: none;
+            }
+        }
+
         button {
             background: #fff;
-            margin-top: 1.5em;
+            margin-top: 1em;
             border: none;
             border-radius: 10px;
             height: 2em;
@@ -54,6 +73,11 @@
             &:hover {
                 cursor: pointer;
                 background-color: rgb(207, 207, 207);
+                outline: none;
+            }
+
+            &:focus {
+                outline: none;
             }
         }
     }
@@ -61,6 +85,8 @@
     #studio-pic {
         width: 35em;
         margin-top: 2em;
+        border-radius: 10px;
+
     }
 }
 
@@ -75,6 +101,10 @@
             width: 80vw;
 
             input {
+                width: 60vw;
+            }
+
+            textarea {
                 width: 60vw;
             }
         }
