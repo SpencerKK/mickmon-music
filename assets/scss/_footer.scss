@@ -1,0 +1,20 @@
+.footer {
+    background-image: url("/assets/images/background.jpg");
+    text-align: center;
+    padding-top: 10em;
+
+    .socials {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        img {
+            width: 5em;
+            margin: 2em;
+        }
+    }
+
+    #mlogo {
+        margin: 4em;
+    }
+}
