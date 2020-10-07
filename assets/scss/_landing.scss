@@ -13,27 +13,27 @@
     #landing-logo {
         max-width: 30vw;
         max-height: 50vh;
-        width: auto;
-        height: auto;
+        min-width: 15em;
+        min-height: 15em;
+        object-fit: contain;
     }
 
     #music-producer {
-        width: 12em;
+        max-width: 20em;
     }
 
     #arrow-down {
         width: 1.2em;
-        transform: translateY(10vh);
+        position: absolute;
+        top: 96vh;
+        transform:translateY(-100%);
     }
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 450px) {
     .landing {
-        #landing-logo {
-            max-width: 80vw;
-            max-height: 40vh;
-            width: auto;
-            height: auto;
+        #music-producer {
+            max-width:15em;
         }
     }
 }
