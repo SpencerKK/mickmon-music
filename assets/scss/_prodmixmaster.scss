@@ -46,75 +46,97 @@
             width: 25em;
             height: 15em;
             margin-bottom: 1em;
+            margin: 0 auto;
+            margin-bottom: 2em;
          }
 
          // Size is diff here so need to adjust this by itself
          #production-detail-txt-lg {
-            height: 12em;
+            height: 15em;
          }
 
          #mix-detail-txt-lg {
-            height: 7em;
+            height: 9em;
          }
 
          #master-detail-txt {
-            height: 11em;
+            height: 13em;
          }
       }
    }
 }
 
-@media screen and (max-width: 1350px) {
-   .prodmixmaster {
-      #prodmixmaster-title {
-         transform: rotate(-2deg);
-      }
-
-      .prodmixmaster-content {
-         .detail-card {
-            margin-bottom: 5em;
+@media screen and (max-width: 858px) {
+    .prodmixmaster  {
+        #prodmixmaster-title {
+           display: none;
          }
-      }
-   }
-}
+      
+         #prodmixmaster-sml {
+            display: block;
+            width: 80vw;
+         }
+        .prodmixmaster-content {
+            .detail-card {
+                margin-top: 4em;
 
-@media screen and (max-width: 800px) {
-   .prodmixmaster {
-      #prodmixmaster-title {
-         display: none;
-      }
+                #prod-title, #mix-title, #master-title {
+                    width: 45vw;
+                    height: auto;
+                 }
 
-      #prodmixmaster-sml {
-         display: block;
-         width: 35em;
-      }
-   }
-}
-
-@media screen and (max-width: 450px) {
-   .prodmixmaster {
-      #prodmixmaster-sml {
-         width: 22em;
-      }
-      .prodmixmaster-content {
-         .detail-card {
-            iframe {
-               margin: 0 auto 2em auto;
-               width: 80vw;
+                iframe {
+                    width: 60vw;
+                    height: 35vh;
+                }
+                #production-detail-txt-lg {
+                    height: auto;
+                    width: 70vw;
+                 }
+        
+                 #mix-detail-txt-lg {
+                    height: auto;
+                    width: 70vw;
+                 }
+        
+                 #master-detail-txt {
+                    height: auto;
+                    width: 70vw;
+                 }
             }
-
-            #production-detail-txt-lg {
-                height: 12em;
-             }
-    
-             #mix-detail-txt-lg {
-                height: 6em;
-             }
-    
-             #master-detail-txt {
-                height: 11em;
-             }
-         }
-      }
-   }
+        }
+    }
 }
+
+
+
+// @media screen and (max-width: 450px) {
+//    .prodmixmaster {
+//       #prodmixmaster-sml {
+//          width: 25em;
+//       }
+//       .prodmixmaster-content {
+//          .detail-card {
+//             iframe {
+//                margin: 0 auto 2em auto;
+//                width: 80vw;
+//             }
+
+//             #production-detail-txt-lg {
+//                 height: auto;
+//                 width: 95vw;
+//              }
+    
+//              #mix-detail-txt-lg {
+//                 height: auto;
+//                 width: 95vw;
+//              }
+    
+//              #master-detail-txt {
+//                 height: auto;
+//                 width: 95vw;
+//              }
+//          }
+//       }
+//    }
+// }
